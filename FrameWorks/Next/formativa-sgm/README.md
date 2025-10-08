@@ -198,7 +198,10 @@ A tabela abaixo apresenta os riscos identificados no projeto **SGM**, organizado
 
 ## Prototipagem
 
+Tela de Login -> Unica
 
----
+DashBoard -> Técnico, Gerente, Admin
+
+https://www.figma.com/design/HY6ZQXdybkOrgQ3SS0MykU/FormativaSGM?node-id=0-1&t=H3noE5sEaO7Vj2ZZ-1
 
 ## Codificação 

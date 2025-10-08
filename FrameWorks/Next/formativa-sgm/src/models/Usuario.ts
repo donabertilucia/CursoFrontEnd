@@ -42,10 +42,12 @@ UsuarioSchema.pre<IUsuario>("save", async function (next) {
 });
 
 //método para comparar a senha antes de fazer o login
-//quando o faz o login ( compara a senha digitada e criptografada com a senha criptografada do banco)
-UsuarioSchema.methods.compareSenha = function (senhaUsuario:string):Promise<boolean>{
+//quando o faz o login ( compara a senha digita e criptografada , com a senha criptografada do banco)
+UsuarioSchema.methods.compareSenha = function (
+  senhaUsuario: string
+): Promise<boolean> {
   return bcrypt.compare(senhaUsuario, this.senha);
-}
+};
 
 //toMap <=> fromMap
 const Usuario: Model<IUsuario> =
